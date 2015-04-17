@@ -1,0 +1,68 @@
+<fpc>
+	<name>Get SNMP FPC</name>
+	<description>Queries a host for a list of monitorable fpc</description>
+	<oid_index>.1.3.6.1.4.1.2636.3.1.13.1.5.7</oid_index>
+	<oid_index_parse>OID/REGEXP:.*([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})$</oid_index_parse>
+	<index_order>fpcIndex</index_order>
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<fpcIndex>
+			<name>FPC Index</name>
+			<method>walk</method>
+			<source>OID/REGEXP:.*\.*([0-9]{1,2})\.[0-9]{1,2}\.[0-9]{1,2}$</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.2636.3.1.13.1.5.7</oid>
+		</fpcIndex>
+		<fpcNumber>
+			<name>FPC Number</name>
+			<method>walk</method>
+			<source>VALUE/REGEXP:^FPC: MPCE Type 2 3D @ ([0-9]{1,2})\/\*\/\*$</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.2636.3.1.13.1.5.7</oid>
+		</fpcNumber>
+		<jnxOperatingDescr>
+			<name>Description</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.2636.3.1.13.1.5.7</oid>
+		</jnxOperatingDescr>
+		<jnxOperatingStateOrdered>
+			<name>Operating State</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.1.13.1.16.7</oid>
+		</jnxOperatingStateOrdered>		
+		<jnxOperatingTemp>
+			<name>Temperature</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.1.13.1.7.7</oid>
+		</jnxOperatingTemp>		
+		<jnxOperatingCPU>
+			<name>CPU Utilization</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.1.13.1.8.7</oid>
+		</jnxOperatingCPU>		
+		<jnxOperatingBuffer>
+			<name>RAM Utilization</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.1.13.1.11.7</oid>
+		</jnxOperatingBuffer>		
+		<jnxOperatingMemory>
+			<name>Max RAM</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.1.13.1.15.7</oid>
+		</jnxOperatingMemory>				
+	</fields>
+</fpc>
