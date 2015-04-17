@@ -1,0 +1,287 @@
+<interface>
+	<name>Juniper Interfece COS qstats packets/s</name>
+	<description>Querie for Juniper entries</description>
+	<script_path>/data/cacti/scripts/ss_juniper_int_qstats.php</script_path>
+	<script_function>ss_juniper_int_qstats</script_function>
+	<script_server>php</script_server>
+	<arg_prepend>|host_hostname| |host_snmp_version|:|host_snmp_port|:|host_snmp_timeout|:|host_ping_retries|:|host_max_oids|:|host_snmp_community|:|host_snmp_username|:|host_snmp_password|:|host_snmp_auth_protocol|:|host_snmp_priv_passphrase|:|host_snmp_priv_protocol|:|host_snmp_context|</arg_prepend>
+	<arg_index>index</arg_index>
+	<arg_query>query</arg_query>
+	<arg_get>get</arg_get>
+	<output_delimeter>!</output_delimeter>
+	<index_order>Index</index_order>
+	<index_order_type>alphabetic</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+	<fields>
+		<Index>
+			<name>Index</name>
+			<direction>input</direction>
+			<query_name>index</query_name>
+		</Index>
+		<ifdescription>
+			<name>Description</name>
+			<direction>input</direction>
+			<query_name>ifdescription</query_name>
+		</ifdescription>
+		<ifname>
+			<name>ifName</name>
+			<direction>input</direction>
+			<query_name>ifname</query_name>
+		</ifname>
+		<ifstatus>
+			<name>ifstatus</name>
+			<direction>input</direction>
+			<query_name>ifstatus</query_name>
+		</ifstatus>
+		<ifalias>
+			<name>ifAlias</name>
+			<direction>input</direction>
+			<query_name>ifalias</query_name>
+		</ifalias>
+		<iftype>
+			<name>ifType</name>
+			<direction>input</direction>
+			<query_name>iftype</query_name>
+		</iftype>
+		<queued1>
+			<name>Packets at the output queued1</name>
+			<direction>output</direction>
+			<query_name>queued1</query_name>
+		</queued1>
+		<queued2>
+			<name>Packets at the output queued2</name>
+			<direction>output</direction>
+			<query_name>queued2</query_name>
+		</queued2>
+		<queued3>
+			<name>Packets at the output queued3</name>
+			<direction>output</direction>
+			<query_name>queued3</query_name>
+		</queued3>
+		<queued4>
+			<name>Packets at the output queued4</name>
+			<direction>output</direction>
+			<query_name>queued4</query_name>
+		</queued4>
+		<queued5>
+			<name>Packets at the output queued5</name>
+			<direction>output</direction>
+			<query_name>queued5</query_name>
+		</queued5>
+		<queued6>
+			<name>Packets at the output queued6</name>
+			<direction>output</direction>
+			<query_name>queued6</query_name>
+		</queued6>
+		<queued7>
+			<name>Packets at the output queued7</name>
+			<direction>output</direction>
+			<query_name>queued7</query_name>
+		</queued7>
+		<queued8>
+			<name>Packets at the output queued8</name>
+			<direction>output</direction>
+			<query_name>queued8</query_name>
+		</queued8>
+		<transmitted1>
+			<name>Packets at the output transmitted1</name>
+			<direction>output</direction>
+			<query_name>transmitted1</query_name>
+		</transmitted1>
+		<transmitted2>
+			<name>Packets at the output transmitted2</name>
+			<direction>output</direction>
+			<query_name>transmitted2</query_name>
+		</transmitted2>
+		<transmitted3>
+			<name>Packets at the output transmitted3</name>
+			<direction>output</direction>
+			<query_name>transmitted3</query_name>
+		</transmitted3>
+		<transmitted4>
+			<name>Packets at the output transmitted4</name>
+			<direction>output</direction>
+			<query_name>transmitted4</query_name>
+		</transmitted4>
+		<transmitted5>
+			<name>Packets at the output transmitted5</name>
+			<direction>output</direction>
+			<query_name>transmitted5</query_name>
+		</transmitted5>
+		<transmitted6>
+			<name>Packets at the output transmitted6</name>
+			<direction>output</direction>
+			<query_name>transmitted6</query_name>
+		</transmitted6>
+		<transmitted7>
+			<name>Packets at the output transmitted7</name>
+			<direction>output</direction>
+			<query_name>transmitted7</query_name>
+		</transmitted7>
+		<transmitted8>
+			<name>Packets at the output transmitted8</name>
+			<direction>output</direction>
+			<query_name>transmitted8</query_name>
+		</transmitted8>
+		<dropped1>
+			<name>Packets at the output dropped1</name>
+			<direction>output</direction>
+			<query_name>dropped1</query_name>
+		</dropped1>
+		<dropped2>
+			<name>Packets at the output dropped2</name>
+			<direction>output</direction>
+			<query_name>dropped2</query_name>
+		</dropped2>
+		<dropped3>
+			<name>Packets at the output dropped3</name>
+			<direction>output</direction>
+			<query_name>dropped3</query_name>
+		</dropped3>
+		<dropped4>
+			<name>Packets at the output dropped4</name>
+			<direction>output</direction>
+			<query_name>dropped4</query_name>
+		</dropped4>
+		<dropped5>
+			<name>Packets at the output dropped5</name>
+			<direction>output</direction>
+			<query_name>dropped5</query_name>
+		</dropped5>
+		<dropped6>
+			<name>Packets at the output dropped6</name>
+			<direction>output</direction>
+			<query_name>dropped6</query_name>
+		</dropped6>
+		<dropped7>
+			<name>Packets at the output dropped7</name>
+			<direction>output</direction>
+			<query_name>dropped7</query_name>
+		</dropped7>
+		<dropped8>
+			<name>Packets at the output dropped8</name>
+			<direction>output</direction>
+			<query_name>dropped8</query_name>
+		</dropped8>
+		<reddropped1>
+			<name>Packets at the output red dropped1</name>
+			<direction>output</direction>
+			<query_name>reddropped1</query_name>
+		</reddropped1>
+		<reddropped2>
+			<name>Packets at the output red dropped2</name>
+			<direction>output</direction>
+			<query_name>reddropped2</query_name>
+		</reddropped2>
+		<reddropped3>
+			<name>Packets at the output red dropped3</name>
+			<direction>output</direction>
+			<query_name>reddropped3</query_name>
+		</reddropped3>
+		<reddropped4>
+			<name>Packets at the output red dropped4</name>
+			<direction>output</direction>
+			<query_name>reddropped4</query_name>
+		</reddropped4>
+		<reddropped5>
+			<name>Packets at the output red dropped5</name>
+			<direction>output</direction>
+			<query_name>reddropped5</query_name>
+		</reddropped5>
+		<reddropped6>
+			<name>Packets at the output red dropped6</name>
+			<direction>output</direction>
+			<query_name>reddropped6</query_name>
+		</reddropped6>
+		<reddropped7>
+			<name>Packets at the output red dropped7</name>
+			<direction>output</direction>
+			<query_name>reddropped7</query_name>
+		</reddropped7>
+		<reddropped8>
+			<name>Packets at the output red dropped8</name>
+			<direction>output</direction>
+			<query_name>reddropped8</query_name>
+		</reddropped8>
+		<ratelimitdropped1>
+			<name>Packets at the output ratelimit dropped1</name>
+			<direction>output</direction>
+			<query_name>ratelimitdropped1</query_name>
+		</ratelimitdropped1>
+		<ratelimitdropped2>
+			<name>Packets at the output ratelimit dropped2</name>
+			<direction>output</direction>
+			<query_name>ratelimitdropped2</query_name>
+		</ratelimitdropped2>
+		<ratelimitdropped3>
+			<name>Packets at the output ratelimit dropped3</name>
+			<direction>output</direction>
+			<query_name>ratelimitdropped3</query_name>
+		</ratelimitdropped3>
+		<ratelimitdropped4>
+			<name>Packets at the output ratelimit dropped4</name>
+			<direction>output</direction>
+			<query_name>ratelimitdropped4</query_name>
+		</ratelimitdropped4>
+		<ratelimitdropped5>
+			<name>Packets at the output ratelimit dropped5</name>
+			<direction>output</direction>
+			<query_name>ratelimitdropped5</query_name>
+		</ratelimitdropped5>
+		<ratelimitdropped6>
+			<name>Packets at the output ratelimit dropped6</name>
+			<direction>output</direction>
+			<query_name>ratelimitdropped6</query_name>
+		</ratelimitdropped6>
+		<ratelimitdropped7>
+			<name>Packets at the output ratelimit dropped7</name>
+			<direction>output</direction>
+			<query_name>ratelimitdropped7</query_name>
+		</ratelimitdropped7>
+		<ratelimitdropped8>
+			<name>Packets at the output ratelimit dropped8</name>
+			<direction>output</direction>
+			<query_name>ratelimitdropped8</query_name>
+		</ratelimitdropped8>
+		<queuedbytes1>
+			<name>Packets at the output queued bytes1</name>
+			<direction>output</direction>
+			<query_name>queuedbytes1</query_name>
+		</queuedbytes1>
+		<queuedbytes2>
+			<name>Packets at the output queued bytes2</name>
+			<direction>output</direction>
+			<query_name>queuedbytes2</query_name>
+		</queuedbytes2>
+		<queuedbytes3>
+			<name>Packets at the output queued bytes3</name>
+			<direction>output</direction>
+			<query_name>queuedbytes3</query_name>
+		</queuedbytes3>
+		<queuedbytes4>
+			<name>Packets at the output queued bytes4</name>
+			<direction>output</direction>
+			<query_name>queuedbytes4</query_name>
+		</queuedbytes4>
+		<queuedbytes5>
+			<name>Packets at the output queued bytes5</name>
+			<direction>output</direction>
+			<query_name>queuedbytes5</query_name>
+		</queuedbytes5>
+		<queuedbytes6>
+			<name>Packets at the output queued bytes6</name>
+			<direction>output</direction>
+			<query_name>queuedbytes6</query_name>
+		</queuedbytes6>
+		<queuedbytes7>
+			<name>Packets at the output queued bytes7</name>
+			<direction>output</direction>
+			<query_name>queuedbytes7</query_name>
+		</queuedbytes7>
+		<queuedbytes8>
+			<name>Packets at the output queued bytes8</name>
+			<direction>output</direction>
+			<query_name>queuedbytes8</query_name>
+		</queuedbytes8>
+	</fields>
+</interface>
